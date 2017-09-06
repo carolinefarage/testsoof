@@ -1,0 +1,4 @@
+var data = [{label: "Drillers", value: 100}, {label: "Cranes",value: 100 }, {label: "Blasters", value: 100 }];
+var message = {"result": data};
+message["id"] = "donut";
+return publish("responseChannel", message);

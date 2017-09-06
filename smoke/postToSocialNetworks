@@ -1,0 +1,2 @@
+return facebookPost ('from SOOFA')
+tweet ('from SOOFA');

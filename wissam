@@ -1,0 +1,14 @@
+var docModule          = require('document');
+ deviceHealthQueue  = docModule.getInstance('DefaultStore');
+ pageNumber   = 1;
+ sort         = "a";
+
+var job;
+var queryObj = {
+  "resultsPerPage": 50,
+  "sort": "apsdb.creationTime<date:" + sort + ">",
+  pageNumber: pageNumber,
+  fields: "soofaMessage"
+};
+var queryResult = deviceHealthQueue.query(queryObj);
+return queryResult;

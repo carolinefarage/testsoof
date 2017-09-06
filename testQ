@@ -1,0 +1,12 @@
+var queryObj = {
+  "resultsPerPage": 50,
+  "sort": "apsdb.creationTime<date:ASC>",
+  pageNumber: NaN,
+  fields: "soofaMessage"
+};
+
+
+    var documents = require("document");
+    var results;
+    results = documents.query(queryObj);
+return results;

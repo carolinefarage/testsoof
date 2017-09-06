@@ -1,0 +1,8 @@
+var data =  [
+	['Label', 'Value'],
+	['Memory', 10],
+	['CPU', 100],
+	['Network', 200]
+];
+
+return data;

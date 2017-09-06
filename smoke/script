@@ -1,0 +1,24 @@
+var documents = require("document");
+/*var saveDocumentParams = {
+    "key" : "bassem",
+    "numeric" : 10,
+    "text" : "text",
+    "string" : "string",
+    "date" : "2017-05-06",
+    "geo" : "45.98,45.45",
+    "meta.types" : {
+        "numeric" : "numeric",
+        "string" : "string",
+        "text": "text",
+        "date" : "date",
+        "geo" : "geospatial"
+    }
+}
+return documents.save(saveDocumentParams);
+*/
+var queryParams = {
+    "query" : "key = \"bassem\"",
+    "fields" : "*"
+}
+
+return documents.query(queryParams);

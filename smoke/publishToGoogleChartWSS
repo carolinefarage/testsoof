@@ -1,0 +1,9 @@
+var data =  [
+	['Label', 'Value'],
+	['Memory', 100],
+	['CPU', 100],
+	['Network', 100]
+];
+var message = {"result": data};
+message["id"] = "bassem";
+return publish("responseChannel", message);

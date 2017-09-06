@@ -1,0 +1,27 @@
+var storeName = "myStore";
+var docKey = "myDocKey";
+var document = require("document");
+var store = require("store");
+
+return store.create("myStore");
+
+//return store.delete(storeName);
+
+//var documents = document.getInstance(storeName);
+
+/*var params = {
+    "key" : docKey,
+    "fieldString" : "bassem",
+    "meta.types" : {
+        "fieldString" : "string"
+    }
+}
+
+return documents.save(params);*/
+
+var queryParams = {
+    "query" : "key = \"" + docKey + "\"",
+    "count" : "true",
+    "fields" : "key"
+}
+return documents.query(queryParams);
