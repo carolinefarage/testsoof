@@ -1,4 +1,4 @@
-// test yahoo and gmails
+// test yahoo and gmailsk
 var documents = require("document");
 
 var queryObj = {
